@@ -22,7 +22,7 @@ class AddItem extends React.Component {
     render(){
         return(
             <form className="addTodo" onSubmit={this.handleSubmit}>
-                <input type="text" placeholder="item,price" required ref="newItem"/>
+                <input type="text" placeholder="item price" required ref="newItem"/>
                 
                 <input type="submit" value="Hit me" />
             </form>

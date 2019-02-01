@@ -93,12 +93,12 @@ class TodoComponent extends React.Component {
 
         return (
             <div className="todoList">
-                <h1> Xzemplar Superstore</h1>
+                <h1> Emplar Boutique</h1>
                 <h2>Sales Invoice</h2>
                 <h6> Item   Qty  Price  Amount </h6>
                 <ul>{todos}</ul>
                
-                <h5> Total ({this.state.count})  N {this.state.sum} </h5>
+                <h5> Total ({this.state.count})  N{this.state.sum} </h5>
                 
                 <h6> Thanks for Patronage </h6>
                 <h6> { Date()} </h6>
