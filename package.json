@@ -8,7 +8,7 @@
   "description": "A simple todo app",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --port 4001  --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production  "
   },
   "author": "Mrwal",
