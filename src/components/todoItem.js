@@ -16,7 +16,7 @@ class TodoItem extends React.Component {
     render(){
         return (
             <div className="todoItem" onClick={this.handleDelete} >
-                  <span> {this.props.index}   </span>
+                  <span> {this.props.content.amount}   </span>
                   <span id='delete'> del </span>
             </div>
             

@@ -110,11 +110,11 @@ class TodoComponent extends React.Component {
         todos = todos.map(function(content, index){
             return( 
              <tr>                    
-                        <td> <TodoItem index={index+1} content={content} onDelete={this.onDelete} /> </td> 
+                        <td className="index"  > {index+1}  </td>
                         <td className="itemName" > {content.item}  </td>
                         <td className="itemQuantity" > {content.quantity} </td>
-                        <td className="itemPrice"  > {content.price} </td>
-                        <td className="itemAmount"  > {content.amount}  </td>                                                                
+                        <td className="itemPrice"  > {content.price} </td>                        
+                        <td> <TodoItem  content={content} onDelete={this.onDelete} />  </td>                                                                 
               </tr>   
                  );
            }.bind(this));            
