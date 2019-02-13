@@ -80,44 +80,35 @@ class TodoComponent extends React.Component {
     onDelete (item)  {
         var updatedTodos = this.state.todos;
         var indexToDelete= updatedTodos.indexOf(item);        
-        var updatedSum = this.state.sum; 
-        var updatedCount = this.state.count; 
-
-       if(item){
-          updatedTodos = updatedTodos.filter(function(val, index){            
+            
+        updatedTodos = updatedTodos.filter(function(val, index){            
             return  indexToDelete !== index  ;                             
-       })         
-         updatedSum -= item.amount;     
-         updatedCount -= item.quantity;  
-       } else{
-        updatedTodos = [];
-        updatedSum = '';     
-        updatedCount =''; 
-       }
-       
+       }) 
+        
+    var updatedSum = this.state.sum; 
+    var updatedCount = this.state.count;           
+    
     
     this.setState({
       todos: updatedTodos,
       sum: updatedSum,
       count:  updatedCount
     });
-}  
+}   
+
+
       
     
     render() {       
         var todos = this.state.todos;         
 
         todos = todos.map(function(content, index){
-            return( 
-             <tr>                    
-                        <td> <TodoItem index={index+1} content={content} onDelete={this.onDelete} /> </td> 
-                        <td className="itemName" > {content.item}  </td>
-                        <td className="itemQuantity" > {content.quantity} </td>
-                        <td className="itemPrice"  > {content.price} </td>
-                        <td className="itemAmount"  > {content.amount}  </td>                                                                
-              </tr>   
+            return(                                 
+                         <TodoItem index={index+1} content={content} onDelete={this.onDelete} />                                                                                       
+                
                  );
-           }.bind(this));            
+           }.bind(this)); 
+           
            
 
         return (
@@ -127,24 +118,17 @@ class TodoComponent extends React.Component {
                 <h3> {this.state.address}</h3>
                 </div>
                 <h2>Sales Invoice</h2>
-                
-                <table > 
-                        <tr >
-                            <th> S/N </th>
-                            <th> Item </th>
-                            <th> Qty </th>
-                            <th> Price </th>
-                            <th> Amount </th>
-                        </tr>
+                <ul className="listHeader"> 
+                       
                         {todos}                    
-                </table>                
-                <div className="h5">
-                    <h5> Total ({this.state.count})  N{this.state.sum} </h5>                
-                                    
-                </div>
+                </ul>
+                
+
+                <h5> Total ({this.state.count})  N{this.state.sum} </h5>
+                
                 <h6> Thanks for Patronage </h6>
                 <p> { Date()} </p>
-                <h4><AddItem onAdd={this.onAdd} onDelete={this.onDelete} /> </h4>
+                <h6><AddItem onAdd={this.onAdd}  /> </h6>
                 
             </div>
         );

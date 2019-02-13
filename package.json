@@ -1,13 +1,12 @@
 {
   "name": "react-playlist",
-  "version": "1.0.0",  
+  "version": "1.0.0",
   "description": "A simple todo app",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development ",
-    "build": "webpack --mode production  ",    
-    "start":"node server.js"
-
+    "dev": "webpack-dev-server --mode development --hot",
+    "build": "webpack --mode production  ",
+    "start": "node server.js"
   },
   "author": "Mrwal",
   "license": "ISC",
