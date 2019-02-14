@@ -122,10 +122,10 @@ class TodoComponent extends React.Component {
 
         return (
             <div className="todoList">                
-                <div id="h1h3">
+                
                 <h1> {this.state.company}</h1>
                 <h3> {this.state.address}</h3>
-                </div>
+                
                 <h2>Sales Invoice</h2>
                 
                 <table > 

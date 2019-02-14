@@ -1,153 +1,150 @@
 body{
-    background: rgb(236, 240, 241);
-    padding: 1.0vw;
-    font-family: tahoma;
-  }
-  
-  #root{
-    width: 95%;
-    margin: 0 auto;   
-    background: #fff;
-    border-top: 2.0vw solid #7f4cc1;
-    padding: 1.0vw 2vw;
-    border-radius: 1vw;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);    
-    font-weight: bold;
+  background: rgb(236, 240, 241);
+  padding: 1.0vw;
+  font-family: tahoma;
+}
 
-  }
+#root{
+  width: 95%;
+  margin: 0 auto;   
+  background: #fff;
+  border-top: 2.0vw solid #7f4cc1;
+  padding: 1.0vw 2vw;
+  border-radius: 1vw;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.2);    
+  font-weight: bold;
+
+}
+
+ h1  {    
+  text-align: center;
+  letter-spacing: 1.5vw;
+  word-spacing: 2vw;
+  font-size: 300%;
+}
+ h2  {
+  letter-spacing: 2.0vw;
+  word-spacing: 2.0vw;
+  font-style: italic;
+  text-align: center;
+  font-size: 4vmin;
+}
+ h3  {
+  color: #777;
+  font-style:normal ;
+  text-align: center;
   
-   h1  {    
-    text-align: center;
-    letter-spacing: 1.5vw;
-    word-spacing: 2vw;
-    font-size: 300%;
-  }
-   h2  {
-    letter-spacing: 2.0vw;
-    word-spacing: 2.0vw;
-    font-style: italic;
-    text-align: center;
-    font-size: 4vmin;
-  }
-   h3  {
-    color: #777;
-    font-style:normal ;
-    text-align: center;
-    letter-spacing: 0.8vw;
-    word-spacing: 1.0vw;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2vmin;
-  }
-  #h1h3{
-    width: 95%;   
-    margin: 0 auto;
+ 
+  font-family: 'Times New Roman', Times, serif;
+  font-size:12px;
+}
+
+ 
+table {    
+  padding-bottom: 1vw;
+  width: 85%;     
+  text-align: center;    
+  margin: 0 auto;
+}
+table th{
+  margin-bottom: 1.3vmin;
+  font-size: 3vmin;
+}
+table td{
+  margin-bottom: 1px;
+  font-weight: normal;
+  font-size: 3vmin;
+}
+table tr:hover{
+  background: #eee;
+  
+}
+
+ h5 
+ {    
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;        
+  word-spacing: 5px;
+  font-size: 3vmin;
+  border-bottom: 1px solid ;
+  border-top: 1px double ;
+  width: 73%; 
+  margin: 0 auto;
+ 
+  padding: 5px 7px; 
+  margin-top: 3px;
+}
+h5:hover{
+  background: #baa0dd;;
+}
+
+
+
+#root h6  { 
+  color: #777;   
+  font-style: italic;
+  text-align: center;
+  word-spacing: 5px;
+  font-size: 14px;
+}
+#root p  {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  font-size: 12px;
+  border-bottom: 1px double ;
+  padding-bottom: 10vmin; 
+} 
+.todoItem:hover{
+  background: red;   
+}
+ #delete {    
+  display:none;
+}
+.todoItem:hover #delete{    
+  display:inline;
+}
+.addTodo{
+  text-align: center;
+  margin: 0 auto;    
+  background:  #7f4cc1;
+  padding: 5px;
+  width: 95%;
+  font-size:3vmin;
+  border-radius: 4px;
+}
+
+form input[type='text']{  
+  margin: 2px;
+  width:25vmin;
+  font-size:3vmin;
+  border-radius: 4px;
+}
+form input[type='submit']{  
+  margin: 2px;
+  width:25vmin;
+  font-size:3vmin;
+  border-radius: 4px;
+  background: greenyellow;
+}
+#company, #address{
+  margin: 2px;
+  width:40vmin;
+  font-size:3vmin;
+}
+#deleteBtn{  
+  margin: 2px;
+  width:25vmin;
+  font-size:3vmin;
+  border-radius: 4px;
+  background: red;
+}
+
+.listHeader li {       
+  font-style: italic;
+  font-size: 200%;  
+  display: inline-block;
+  font-weight: normal;
+  margin: 0 5.2vw; 
+  padding-right: 1.3vw;    
   } 
-   
-  table {    
-    padding-bottom: 1vw;
-    width: 85%;     
-    text-align: center;    
-    margin: 0 auto;
-  }
-  table th{
-    margin-bottom: 1.3vmin;
-    font-size: 3vmin;
-  }
-  table td{
-    margin-bottom: 1px;
-    font-weight: normal;
-    font-size: 3vmin;
-  }
-  table tr:hover{
-    background: #eee;
-    
-  }
-  
-   h5 
-   {    
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: right;        
-    word-spacing: 5px;
-    font-size: 3vmin;
-    border-bottom: 1px solid ;
-    border-top: 1px double ;
-    width: 73%; 
-    margin: 0 auto;
-   
-    padding: 5px 7px; 
-    margin-top: 3px;
-  }
-  h5:hover{
-    background: #baa0dd;;
-  }
-  
-  #root p  {
-    color: #777;
-    font-style: italic;
-    text-align: center;
-    font-size: 2vmin;
-    border-bottom: 1px double ;
-    padding-bottom: 10vmin; 
-  }
-
-  #root h6  { 
-    color: #777;   
-    font-style: italic;
-    text-align: center;
-    word-spacing: 5px;
-    font-size: 2vmin;
-  }
-    
-  .todoItem:hover{
-    background: red;   
-  }
-   #delete {    
-    display:none;
-  }
-  .todoItem:hover #delete{    
-    display:inline;
-  }
-  .addTodo{
-    text-align: center;
-    margin: 0 auto;    
-    background:  #7f4cc1;
-    padding: 5px;
-    width: 95%;
-    font-size:3vmin;
-    border-radius: 4px;
-  }
-
-  form input[type='text']{  
-    margin: 2px;
-    width:25vmin;
-    font-size:3vmin;
-    border-radius: 4px;
-  }
-  form input[type='submit']{  
-    margin: 2px;
-    width:25vmin;
-    font-size:3vmin;
-    border-radius: 4px;
-    background: greenyellow;
-  }
-  #company, #address{
-    margin: 2px;
-    width:40vmin;
-    font-size:3vmin;
-  }
-  #deleteBtn{  
-    margin: 2px;
-    width:25vmin;
-    font-size:3vmin;
-    border-radius: 4px;
-    background: red;
-  }
-
-  .listHeader li {       
-    font-style: italic;
-    font-size: 200%;  
-    display: inline-block;
-    font-weight: normal;
-    margin: 0 5.2vw; 
-    padding-right: 1.3vw;    
-    } 
