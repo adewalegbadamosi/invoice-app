@@ -21,7 +21,7 @@ body{
   text-align: center;
   letter-spacing: 1.5vw;
   word-spacing: 2vw;
-  font-size: 8vmin;
+  font-size: 7vmin;
 }
  h2  {
   letter-spacing: 2.0vw;
@@ -35,7 +35,7 @@ body{
   font-style:normal ;
   text-align: center; 
   font-family: 'Times New Roman', Times, serif;
-  font-size:18px;
+  font-size:3vmin;
 }
 
  
@@ -101,7 +101,7 @@ p  {
   font-style: italic;
   text-align: center;
   word-spacing: 5px;
-  font-size: 14px;
+  font-size: 3vmin;
   
 }
 .hide{
@@ -124,7 +124,7 @@ p  {
 .addTodo{
   text-align: center;
   margin: 0 auto;    
-  background: #7f4cc1;
+  background:  #7f4cc1;
   padding: 5px;
   width: 95%;
   font-size:3vmin;
@@ -178,31 +178,13 @@ form input[type='submit']{
   background: greenyellow;
 }
 
-@media (max-width:1360px){
-  .todoItem{  
-    float: right;
-    margin-right: 6vmin;  
+@media (max-width:1300px){
+  .cashAnalysis{
+    margin-right: 50px; 
   }
-  h5 
-  {    
-   font-family: Arial, Helvetica, sans-serif;
-   text-align: right; 
-          
-   word-spacing: 5px;
-   font-size: 3vmin;
-   border-bottom: 1px solid ;
-   border-top: 1px double ;
-   width: 73%; 
-   margin: 0 auto; 
-   padding: 5px 10vmin; 
-   margin-top: 3px;
-   
- }
- .cashAnalysis{
-   margin-right: 0px; 
- }
 }
-@media (max-width:600px){
+
+@media (max-width:768px){
   h1  {    
     text-align: center;     
     font-size: 7vmin;
