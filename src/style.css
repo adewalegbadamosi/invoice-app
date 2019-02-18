@@ -79,10 +79,6 @@ table tr:hover{
 }
 #invoiceBalance{
   margin-bottom: 5vmin;
-     
-    
-    
-  
 }
 h5:hover{
   background: #baa0dd;
@@ -212,19 +208,21 @@ form input[type='submit']{
     font-size: 7vmin;
   }
   h3  {
-    color: #777;
-    font-style:normal ;
+    color: black;
+  font-style:normal ;
+  font-weight: normal;    
     text-align: center; 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 3vmin; 
   }
   p  { 
-    color: #777;   
-    font-style: italic;
+    color: black;   
+    font-style: normal;
+    font-weight: normal;
     text-align: center;
     word-spacing: 5px;
-    font-size: 3vmin; 
-    font-weight: normal;    
+    font-size: 3vmin;      
+    font-family: Arial, Helvetica, sans-serif;  
   }
   .todoItem{  
     float: right;
