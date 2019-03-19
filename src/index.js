@@ -14,8 +14,7 @@ class TodoComponent extends React.Component {
                     todos: [],
                     sum:'',
                     count:'',
-                    company: 'Your company Name',
-                    address: 'Your address',
+                    
                     currency:'',
                     cash: '',
                     discount: 0,
@@ -31,12 +30,10 @@ class TodoComponent extends React.Component {
     //Custom functions
   
     
-       onAdd(item,  quantity, price, company,address, currency) {
+       onAdd(item,  quantity, price,  currency) {
         var updatedTodos = this.state.todos;
         var updatedSum = this.state.sum;
-        var updatedCount = this.state.count; 
-        var updatedCompany = this.state.company; 
-        var updatedAddress = this.state.address; 
+        var updatedCount = this.state.count;  
         var updatedCurrency = this.state.currency;
 
         var filter = updatedTodos.filter(function(val, index){            
@@ -76,16 +73,12 @@ class TodoComponent extends React.Component {
             
 
             updatedCount = Number(updatedCount) + Number(quantity) ;
-            updatedCompany =  !company  ?  updatedCompany : company ; 
-            updatedAddress =  !address  ?  updatedAddress : address ;
             updatedCurrency =  !currency  ?  updatedCurrency : currency ;            
       
         this.setState({
             todos: updatedTodos,
             sum: updatedSum,
             count: updatedCount,
-            company: updatedCompany,
-            address: updatedAddress,
             currency: updatedCurrency
         });
     }
@@ -177,8 +170,9 @@ showInputField(e){
         return (
             <div className="todoList">                
                 
-                <h1> {this.state.company}</h1>
-                <h3> {this.state.address}</h3>                
+                <h1> Xzemplar Cleaners</h1>
+                <h3> 21, Oguntifa Street Off Church street, Alapare Ketu Lagos.<br/> 08131537029, 07034336104 </h3>                
+                
                 <h2>Sales Invoice</h2>                
                 <table > 
                         <tr >
@@ -204,9 +198,9 @@ showInputField(e){
                 <p style={this.state.balance ? {display:'block'} : {display:'none'}} >  { Date()} </p>
 
             <div className='inputField'>    
-                <h4 style={!this.state.balance ? {display:'block'} : {display:'none'}}><AddItem onAdd={this.onAdd}  /> </h4>
+                <h4 style={!this.state.balance ? {display:'block'} : {display:'none'}}><AddItem onAdd={this.onAdd}  /> </h4> 
                 <h4 style={!this.state.balance ? {display:'block'} : {display:'none'}} ><Balance cashAnalysis={this.cashAnalysis} onDelete={this.onDelete} /> </h4>
-            </div>    
+            </div>  <br/> <br/>  
                 <button id='create' style={this.state.balance ? {display:'block'} : {display:'none'}} onClick={this.showInputField} > Create New  </button>
             
             </div>

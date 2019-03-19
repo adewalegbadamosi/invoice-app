@@ -33,7 +33,7 @@ class Balance extends React.Component {
                 <input type="text" placeholder="Discount"  ref="discount"/> 
                 <input type="text" placeholder="VAT"  ref="vat"/> 
                 <input   type="submit" value="Balance" />
-            </form>
+            </form> <br/>
              <button id="deleteBtn" onClick={this.handleDelete} > Delete </button>
 
        </div>
