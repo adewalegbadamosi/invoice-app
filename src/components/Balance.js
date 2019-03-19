@@ -36,7 +36,7 @@ class Balance extends React.Component {
             </form> <br/>
              <button id="deleteBtn" onClick={this.handleDelete} > Delete </button>
 
-       </div>
+            </div>
         );
     }
 

@@ -88,8 +88,7 @@ class TodoComponent extends React.Component {
         var updatedCash = this.state.cash;
         var updatedDiscount = this.state.discount;
         var updatedVat = this.state.vat;         
-        var updatedBalance = this.state.balance; 
-            
+        var updatedBalance = this.state.balance;             
         updatedCash =  !cash  ?  updatedCash : (cash *1).toFixed(2);
         updatedDiscount =  !discount  ?  updatedDiscount : (discount /100 * updatedSum).toFixed(2) ;
         updatedVat =  !vat  ?  updatedVat : (vat/100 * updatedSum).toFixed(2) ; 
@@ -172,7 +171,6 @@ showInputField(e){
                 
                 <h1> Xzemplar Cleaners</h1>
                 <h3> 21, Oguntifa Street Off Church street, Alapare Ketu Lagos.<br/> 08131537029, 07034336104 </h3>                
-                
                 <h2>Sales Invoice</h2>                
                 <table > 
                         <tr >
