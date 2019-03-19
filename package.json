@@ -2,7 +2,7 @@
   "name": "react-playlist",
   "version": "1.0.0",
   "description": "A simple todo app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --hot",
     "build": "webpack --mode production  ",
@@ -25,5 +25,8 @@
     "express": "^4.16.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
+  },
+  "engines":{
+    "node": "8.12.0"
   }
 }
